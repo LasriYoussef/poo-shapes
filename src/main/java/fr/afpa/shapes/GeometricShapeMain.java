@@ -1,5 +1,7 @@
 package fr.afpa.shapes;
+
 import java.util.ArrayList;
+
 /*
 	Objectif : développer des classes représentant des formes géométriques (Rectangle, Cercle et Triangle)
 	Pour chacune de ces classes il faudra implémenter deux méthodes :
@@ -34,45 +36,43 @@ import java.util.ArrayList;
 	 -> plus d'informations par ici https://codegym.cc/fr/groups/posts/fr.575.math-pi-en-java
 
 */
-class GeometricShapeMain{
-	public static void main(String[] args) 
-	{
-		// Instancier plusieurs objets des classes Rectangle et Circle (2 instances de chaque)
-	
-				Circle circle1 = new Circle(18);
-				Circle circle2 = new Circle(36);
-			
-				Rectangle rectangle1 = new Rectangle(50, 20);
-				Rectangle rectangle2 = new Rectangle(5, 10);
-			
-		
-		
-		
+class GeometricShapeMain {
+	public static void main(String[] args) {
+		// Instancier plusieurs objets des classes Rectangle et Circle (2 instances de
+		// chaque)
+
+		Circle circle1 = new Circle(18);
+		Circle circle2 = new Circle(36);
+
+		Rectangle rectangle1 = new Rectangle(50, 20);
+		Rectangle rectangle2 = new Rectangle(5, 10);
 
 		// Ajouter ces objets à une instance de la classe "ArrayList"
-		// plus d'information sur la classe "ArrayList" -> https://info.clg.qc.ca/java/structures/array-list
-		   // Créer une ArrayList de type Shape
-		   // Création de l'ArrayList : Une instance de ArrayList de type Shape est créée.
-// Ajout des objets : Les instances des objets Circle et Rectangle sont ajoutées à l'ArrayList.
-		   ArrayList<Shape> listShapes = new ArrayList<>();
-        
-		   // Ajouter les objets à l'ArrayList
-		   listShapes.add(circle1);
-		   listShapes.add(circle2);
-		   listShapes.add(rectangle1);
-		   listShapes.add(rectangle2);
-		   
-		   
-		   // Boucler sur les éléments de la liste afin d'afficher le périmètre et l'aire de chaque objet
-		   // Parcourir l'ArrayList pour afficher les périmètres et les aires
-		   // Parcours de l'ArrayList : Utilisation d'une boucle for-each pour parcourir chaque objet de l'ArrayList et afficher le périmètre et l'aire de chaque forme.
-		   for (Shape shape : listShapes) {
-			   System.out.println(" Shape: " + shape.getClass().getSimpleName());
-			   System.out.println(" Perimeter: " + shape.calculatePerimeter());
-			   System.out.println(" Area: " + shape.calculateArea());
-			   System.out.println();
-		   }
+		// plus d'information sur la classe "ArrayList" ->
+		// https://info.clg.qc.ca/java/structures/array-list
+		// Créer une ArrayList de type Shape
+		// Création de l'ArrayList : Une instance de ArrayList de type Shape est créée.
+		// Ajout des objets : Les instances des objets Circle et Rectangle sont ajoutées
+		// à l'ArrayList.
+		ArrayList<Shape> listShapes = new ArrayList<>();
+
+		// Ajouter les objets à l'ArrayList
+		listShapes.add(circle1);
+		listShapes.add(circle2);
+		listShapes.add(rectangle1);
+		listShapes.add(rectangle2);
+
+		// Boucler sur les éléments de la liste afin d'afficher le périmètre et l'aire
+		// de chaque objet
+		// Parcourir l'ArrayList pour afficher les périmètres et les aires
+		// Parcours de l'ArrayList : Utilisation d'une boucle for-each pour parcourir
+		// chaque objet de l'ArrayList et afficher le périmètre et l'aire de chaque
+		// forme.
+		for (Shape shape : listShapes) {
+			System.out.println(" Shape: " + shape.getClass().getSimpleName());
+			System.out.println(" Perimeter: " + shape.calculatePerimeter());
+			System.out.println(" Area: " + shape.calculateArea());
+			System.out.println();
 		}
 	}
-		   
-		   
+}
